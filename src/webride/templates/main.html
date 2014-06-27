@@ -1,19 +1,23 @@
 <!doctype html>
 <head>
   <link rel="stylesheet" href="static/lib/codemirror.css">
-  <script src="static/main.js"></script>
+  <link rel="stylesheet" href="static/editor.css">
   <script src="static/lib/jquery.js"></script>
   <script src="static/lib/codemirror.js"></script>
   <script src="static/lib/javascript.js"></script>
+  <script src="static/main.js"></script>
   <title>Web RIDE</title>
 </head>
 <body>
-  <div class="navi-tree">
-    <ul>
-      {% for name in suite_names %}
-      <li><a href="#{{ name }}"> {{ name }}</a></li>
-      {% endfor %}
-    </ul>
+  <div class="editor-container">
+    <div class="navi-tree">
+      <h4>Test suite files</h4>
+      <ul>
+        {% for name in suite_names %}
+        <li><a href="#{{ name }}"> {{ name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="editor"></div>
   </div>
-  <div class="editor"></div>
 </body>
