@@ -1,11 +1,12 @@
 window.onload = function() {
   var editor;
   var loadEditor = function(data) {
-    editor = CodeMirror(document.body, {
+    $('.editor').empty()
+    editor = CodeMirror($('.editor')[0], {
       lineNumbers: true,
       value: data
     })
-    $(document.body).append('<button class="save">Save</button>')
+    $('.editor').append('<button class="save">Save</button>')
   }
 
   $('.navi-tree a').on('click', function() {
