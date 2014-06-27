@@ -11,7 +11,8 @@ def init():
 
 @app.route("/datafile")
 def fetch_datafile():
-    return open('testdata/test_suite.txt').read()
+    fname = request.args.get('path')
+    return open(os.path.join('testdata', fname)).read()
 
 
 @app.route("/datafile/save", methods=['POST'])

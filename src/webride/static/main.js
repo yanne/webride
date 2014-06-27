@@ -9,9 +9,10 @@ window.onload = function() {
     $('.editor').append('<button class="save">Save</button>')
   }
 
-  $('.navi-tree a').on('click', function() {
+  $('.navi-tree a').on('click', function(evt) {
     $.ajax({
         url: '/datafile',
+        data: {path: evt.currentTarget.hash.substring(1)},
         success: loadEditor,
         error: function(jqXHR, statusText, error) {console.log(error)}
     })
