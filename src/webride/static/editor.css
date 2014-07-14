@@ -29,3 +29,7 @@ Distributed under the MIT License: http://opensource.org/licenses/MIT
 .editor {
   margin-left: 200px;
 }
+
+.cm-cell-separator {
+  background: #efefff;
+}
