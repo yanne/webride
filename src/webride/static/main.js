@@ -1,3 +1,8 @@
+/*
+Copyright 2014 Janne Härkönen
+Distributed under the MIT License: http://opensource.org/licenses/MIT
+*/
+
 window.onload = function() {
   var editor;
   var loadEditor = function(data) {

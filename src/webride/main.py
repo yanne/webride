@@ -1,3 +1,9 @@
+#
+# Copyright 2014 Janne Härkönen
+# Distributed under the MIT License: http://opensource.org/licenses/MIT
+#
+
+
 import os
 from flask import Flask, render_template, request
 app = Flask(__name__)

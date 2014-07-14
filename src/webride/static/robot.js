@@ -1,3 +1,8 @@
+/*
+Copyright 2014 Janne Härkönen
+Distributed under the MIT License: http://opensource.org/licenses/MIT
+*/
+
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
     mod(require("../../lib/codemirror"));
