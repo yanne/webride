@@ -9,6 +9,7 @@ window.onload = function() {
     $('.editor').empty()
     editor = CodeMirror($('.editor')[0], {
       lineNumbers: true,
+      extraKeys: {'Ctrl-Space': 'autocomplete'},
       value: data
     })
     $('.editor').append('<button class="save">Save</button>')
