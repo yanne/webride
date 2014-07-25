@@ -1,5 +1,5 @@
 #
-# Copyright 2014 Janne Härkönen
+# Copyright 2014 Janne Harkonen
 # Distributed under the MIT License: http://opensource.org/licenses/MIT
 #
 
